@@ -29,7 +29,7 @@ class Personaje:
 
 
 
-#SUBCLASES 
+#  SUBCLASES 
 
 
 class Guerrero(Personaje):
@@ -115,5 +115,3 @@ class Asesino(Personaje):
         daño_veneno = self._ataque + random.randint(8, 15)
         print(f" {self._nombre} usa 'Hoja Envenenada' inyectando toxinas a {objetivo.get_nombre()}!")
         objetivo.recibir_dmg(daño_veneno)
-        
-        
