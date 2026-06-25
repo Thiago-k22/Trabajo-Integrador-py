@@ -11,6 +11,9 @@ def crear_personaje(opcion, nombre):
     elif opcion == 3:
         return Arquero(nombre, 90, 12, 20)
 
+    elif opcion == 4:
+        return Asesino(nombre, 60, 35, 25)
+
     else:
         return None
 
@@ -19,6 +22,7 @@ print("=== CREACIÓN DE PERSONAJE ===")
 print("1 - Guerrero")
 print("2 - Mago")
 print("3 - Arquero")
+print("4 - Asesino")
 
 opcion = int(input("Seleccione una clase: "))
 nombre = input("Ingrese el nombre del personaje: ")
