@@ -1,0 +1,2 @@
+class Guerrero(Personaje):
+  pass
