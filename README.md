@@ -17,5 +17,5 @@ Simulador RPG desarrollado en Python.
 - Guerrero
 - Mago
 - Arquero
-- Inventario
+- Combate
 - Enemigo
