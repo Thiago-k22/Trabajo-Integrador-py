@@ -1,4 +1,4 @@
-from clases import Guerrero, Mago, Arquero
+from clases import Guerrero, Mago, Arquero, Asesino
 
 def crear_personaje(opcion, nombre):
 
