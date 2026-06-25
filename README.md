@@ -4,7 +4,7 @@ Trabajo Integrador de Programación Avanzada
 
 -Kovacs Thiago
 -Soto Tobias
--nombre
+-Gabriel Benitez Ibarrola
 -nombre
 
 ## Descripción
