@@ -1,3 +1,4 @@
+from logica import crear_personaje
 print("=== CREACIÓN DE PERSONAJE ===")
 print("1 - Guerrero")
 print("2 - Mago")
