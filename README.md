@@ -3,7 +3,7 @@ Trabajo Integrador de Programación Avanzada
 ## Integrantes
 
 -Kovacs Thiago
--nombre
+-Soto Tobias
 -nombre
 -nombre
 
