@@ -2,3 +2,5 @@ Personaje
   ├─ Guerrero
   ├─Mago
   └─Arquero
+Enemigo
+Combate
