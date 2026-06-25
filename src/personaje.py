@@ -6,6 +6,3 @@ class Personaje:
     
   def atacar(self):
     pass
-
-  def usar_pocion(self):
-    pass
