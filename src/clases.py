@@ -1,6 +1,6 @@
 import random #importamos la libreria random para trabajar con % y ia (osea, .choice,etc)
 class Personaje:
-    def __init__(self, nombre, salud, ataque,pocion):
+    def __init__(self, nombre, salud, ataque, pocion):
         self._nombre = str(nombre) #encapsulamiento, utilizamos metodo get para obtener los resultados
         self._salud_maxima = int(salud)
         self._salud = int(salud)
