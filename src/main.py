@@ -13,6 +13,6 @@ personaje = crear_personaje(opcion, nombre)
 
 if personaje:
     print(f"\nPersonaje creado correctamente.")
-    print(f"Nombre: {personaje._nombre}")
+    print(f"Nombre: {personaje.get_nombre}")
 else:
     print("Opción inválida.")
