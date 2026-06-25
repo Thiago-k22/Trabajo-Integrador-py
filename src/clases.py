@@ -1,10 +1,11 @@
 import random #importamos la libreria random para trabajar con % y ia (osea, .choice,etc)
 class Personaje:
-    def __init__(self, nombre, salud, ataque):
+    def __init__(self, nombre, salud, ataque,pocion):
         self._nombre = str(nombre) #encapsulamiento, utilizamos metodo get para obtener los resultados
         self._salud_maxima = int(salud)
         self._salud = int(salud)
         self._ataque = int(ataque)
+        self._pocion = int(pocion)
 
     def get_nombre(self):
         return self._nombre 
@@ -26,15 +27,24 @@ class Personaje:
 
     def habilidad_especial(self, objetivo):
         pass
-
+    
+    def usar_pociones(self):
+        if self._pocion > 0:
+            self._pocion -= 1
+            self._salud +=10
+            if self._salud > self._salud_maxima:
+                self._salud = self._salud_maxima
+            print(f"{self._nombre} uso una pocion y recupero salud. (Salud: {self._salud}/{self._salud_maxima}, Pociones restantes: {self._pocion})")
+        else:
+             print(f"{self._nombre} no tiene pociones para usar.")
 
 
 #  SUBCLASES 
 
 
 class Guerrero(Personaje):
-    def __init__(self, nombre, salud, ataque, armadura):
-        super().__init__(nombre, salud, ataque)
+    def __init__(self, nombre, salud, ataque, pocion, armadura):
+        super().__init__(nombre, salud, ataque, pocion)
         self._armadura = int(armadura)
 
     def atacar(self, objetivo):
@@ -51,8 +61,8 @@ class Guerrero(Personaje):
 
 
 class Mago(Personaje):
-    def __init__(self, nombre, salud, ataque, mana):
-        super().__init__(nombre, salud, ataque)
+    def __init__(self, nombre, salud, ataque, pocion, mana):
+        super().__init__(nombre, salud, ataque, pocion)
         self._mana = int(mana)
 
     def atacar(self, objetivo):
@@ -71,8 +81,8 @@ class Mago(Personaje):
 
 
 class Arquero(Personaje):
-    def __init__(self, nombre, salud, ataque, flechas):
-        super().__init__(nombre, salud, ataque)
+    def __init__(self, nombre, salud, ataque, pocion, flechas):
+        super().__init__(nombre, salud, ataque,pocion)
         self._flechas = int(flechas)
 
     def atacar(self, objetivo):
@@ -98,8 +108,8 @@ class Arquero(Personaje):
 
 
 class Asesino(Personaje):
-    def __init__(self, nombre, salud, ataque, probabilidad_critico):
-        super().__init__(nombre, salud, ataque)
+    def __init__(self, nombre, salud, ataque, pocion, probabilidad_critico):
+        super().__init__(nombre, salud, ataque, pocion)
         self._critico = float(probabilidad_critico)
 
     def atacar(self, objetivo):
@@ -115,3 +125,4 @@ class Asesino(Personaje):
         daño_veneno = self._ataque + random.randint(8, 15)
         print(f" {self._nombre} usa 'Hoja Envenenada' inyectando toxinas a {objetivo.get_nombre()}!")
         objetivo.recibir_dmg(daño_veneno)
+        
