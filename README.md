@@ -30,7 +30,7 @@ Desarrollar un simulador de combate RPG donde el jugador pudiera:
 
 No se trataba simplemente de hacer un juego, sino de aplicar Programación Orientada a Objetos para representar un sistema de combate, dando atributos y formas de combate, con una base comun, donde presentamos esos comportamientos variados sin duplicar código entre las clases que reamos
 
-##¿Cuales son los objetos?
+## ¿Cuales son los objetos?
 
 - Personaje
 - Guerrero
