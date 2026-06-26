@@ -17,7 +17,6 @@ Simulador RPG desarrollado en Python.
 - Guerrero
 - Mago
 - Arquero
-- Enemigo
 ## Problematica
 
 Desarrollar un simulador de combate RPG donde el jugador pudiera:
