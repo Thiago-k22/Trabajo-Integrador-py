@@ -40,3 +40,31 @@ No se trataba simplemente de hacer un juego, sino de aplicar Programación Orien
 - Enemigo (que en realidad también es un Guerrero, Mago, Arquero o Asesino)
 
 Cada objeto tiene sus atributos, por ejemplo, nombre, salud, ataque, etc. Y sus metodos, atacar(), habilidad_especial(), recibir_dmg().
+
+## Relaciones
+
+               Personaje
+                   ▲
+      ┌────────────┼─────────────┐
+      │            │             │
+ Guerrero       Mago        Arquero
+                   │
+               Asesino
+               
+Todas las clases heredan de Personaje 
+
+## Problemas de diseño
+
+Problematica 1
+Cada personaje ataca distinto.
+¿Cómo evitar escribir un combate diferente para cada uno?
+Solución
+Usar polimorfismo.
+Todos tienen un método atacar(), pero cada clase lo implementa diferente
+
+Problematica 2
+Todos los personajes comparten muchas características.
+
+Todos tienen: nombre, vida, ataque, pociones.
+Si copiábamos ese código cuatro veces, habría mucha repetición.
+La solucion fue crear una clase padre "Personaje" y que las demas hereden
