@@ -42,17 +42,19 @@ No se trataba simplemente de hacer un juego, sino de aplicar Programación Orien
 Cada objeto tiene sus atributos, por ejemplo, nombre, salud, ataque, etc. Y sus metodos, atacar(), habilidad_especial(), recibir_dmg().
 
 ## Relaciones
-
+                Personaje
+                    ▲
+       ┌────────────┼─────────────┐
+       │            │             │
+    Guerrero       Mago        Arquero
+                    │
+                 Asesino
              
                
 Todas las clases heredan de Personaje 
 
 ## Problemas de diseño  
-                Personaje
-       ┌────────────┼─────────────┐    
-    Guerrero       Mago         Arquero
-                    │
-                 Asesino
+    
 Problematica 1
 Cada personaje ataca distinto.
 ¿Cómo evitar escribir un combate diferente para cada uno?
