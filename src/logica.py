@@ -13,7 +13,7 @@ def crear_personaje(opcion, nombre):
         return Arquero(nombre, 90, 12, 2, 20)
 
     elif opcion == 4:
-        return Asesino(nombre, 60, 35, 2, 25)
+        return Asesino(nombre, 60, 35, 2, 0.25)
 
     else:
         return None
