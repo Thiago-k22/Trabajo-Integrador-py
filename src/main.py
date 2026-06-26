@@ -1,4 +1,4 @@
-from logica import crear_personaje
+from logica import crear_personaje, crear_enemigo, combate
 
 print("=== CREACIÓN DE PERSONAJE ===")
 print("1 - Guerrero")
@@ -14,5 +14,20 @@ personaje = crear_personaje(opcion, nombre)
 if personaje:
     print(f"\nPersonaje creado correctamente.")
     print(f"Nombre: {personaje.get_nombre}")
+else:
+    print("Opción inválida.")
+
+personaje = crear_personaje(opcion, nombre)
+
+if personaje:
+
+    print("Personaje creado correctamente.")
+
+    enemigo = crear_enemigo()
+
+    print(f"\nHa aparecido un enemigo: {enemigo.get_nombre()}!")
+
+    combate(personaje, enemigo)
+
 else:
     print("Opción inválida.")
