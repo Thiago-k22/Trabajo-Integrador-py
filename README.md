@@ -38,4 +38,5 @@ No se trataba simplemente de hacer un juego, sino de aplicar Programación Orien
 - Arquero
 - Asesino
 - Enemigo (que en realidad también es un Guerrero, Mago, Arquero o Asesino)
+
 Cada objeto tiene sus atributos, por ejemplo, nombre, salud, ataque, etc. Y sus metodos, atacar(), habilidad_especial(), recibir_dmg().
