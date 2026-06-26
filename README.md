@@ -53,8 +53,7 @@ Cada objeto tiene sus atributos, por ejemplo, nombre, salud, ataque, etc. Y sus 
                
 Todas las clases heredan de Personaje 
 
-## Problemas de diseño  
-    
+## Problemas de diseño      
 Problematica 1
 Cada personaje ataca distinto.
 ¿Cómo evitar escribir un combate diferente para cada uno?
